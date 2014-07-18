@@ -1,0 +1,5 @@
+<%= form_for(:club, :url => {:action => 'create'}) do |f| %>
+	Club Name:<%= f.text_field :club_name %>
+	Player ID:<%= f.text_field :player_id %>
+	<%= submit_tag("Create Club") %>
+<% end %>
