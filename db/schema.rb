@@ -15,12 +15,9 @@ ActiveRecord::Schema.define(version: 20140717071030) do
 
   create_table "clubs", force: true do |t|
     t.string   "club_name"
-    t.integer  "player_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "clubs", ["player_id"], name: "index_clubs_on_player_id"
 
   create_table "players", force: true do |t|
     t.string   "player_name"

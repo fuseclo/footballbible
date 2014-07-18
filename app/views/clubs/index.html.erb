@@ -1,4 +1,6 @@
 <% @clubs.each do |club| %>
-	<%= club.club_name %>
-	<%= club.player.player_name %>
+	<%= club.club_name %><br/>
+	<% club.players.each do |player| %>
+		<%= player.player_name %><br/>
+	<% end %>
 <% end %>
