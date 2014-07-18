@@ -1,6 +1,3 @@
 <% @clubs.each do |club| %>
-	<%= club.club_name %><br/>
-	<% club.players.each do |player| %>
-		<%= player.player_name %><br/>
-	<% end %>
+	<%= club.club_name %><%= link_to "Club Profile", :action => 'show', :id => club.id %>
 <% end %>

@@ -7,8 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+        <header id="header">
+            <div id="header-inner">
+                <div id="header-logo">logo</div>
+                <div id="header-nav">
+                    <nav>
+                        <a href="#"><%= link_to 'Home', "/" %></a>|
+                        <a href="#">LINK</a>|
+                        <a href="#">LINK</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-<%= yield %>
-
+        <div id="main">
+            <h2>news and rumours</h2>
+            
+            <div id="news">
+                <%= yield %>
+            </div>
+        </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 class CreatePlayers < ActiveRecord::Migration
-  def change
+  def up
     create_table :players do |t|
     	t.string "player_name"
     	t.string "player_nation"
@@ -10,5 +10,9 @@ class CreatePlayers < ActiveRecord::Migration
       t.timestamps
     end
     add_index("players", "club_id")
+  end
+
+  def down
+    drop_table :players
   end
 end
