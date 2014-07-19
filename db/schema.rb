@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 20140718140612) do
     t.integer  "club_id"
     t.integer  "player_goals"
     t.integer  "player_assists"
+    t.integer  "player_passes"
+    t.string   "player_position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

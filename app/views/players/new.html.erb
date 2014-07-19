@@ -1,6 +1,9 @@
 <%= form_for(:player, :url => {:action => 'create'}) do |f| %>
 	Player Name:<%= f.text_field :player_name %>	
 	Club ID:<%= f.text_field :club_id %>
-
+	Player Nation: <%= f.text_field :player_nation %>
+	Player Number: <%= f.text_field :player_number %>
+	Player Goals: <%= f.text_field :player_goals %>
+	Player Assists: <%= f.text_field :player_assists %>	
 	<%= submit_tag("Create Player") %>
 <% end %>

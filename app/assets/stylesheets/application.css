@@ -11,6 +11,10 @@ body{
     color: #f6f6f6;
 }
  
+.clear{
+    clear: both;
+}
+ 
 /* HEADER */
  
 #header{
@@ -19,7 +23,7 @@ body{
     width: 100%;
     height: 60px;
      
-    background-color: #6e5baa;
+    background-color: #00ae82;
 }
  
 #header-inner{
@@ -85,7 +89,7 @@ body{
     height: 310px;
     overflow: hidden;
      
-    border: 2px solid #6e5baa;
+    border: 2px solid #00ae82;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
      
@@ -105,7 +109,7 @@ body{
      
     width: 100%;
      
-    background-color: #6e5baa;
+    background-color: #00ae82;
     color: white;
     padding: 10px 0 10px 0;
      
@@ -136,7 +140,7 @@ body{
     width: 896px;
     height: 190px;
      
-    border: 2px solid #6e5baa;
+    border: 2px solid #00ae82;
     border-top-right-radius: 6px;
 }
  
@@ -152,7 +156,7 @@ body{
      
     width: 904px;
      
-    background-color: #6e5baa;
+    background-color: #00ae82;
 }
  
 #article-title h2{
@@ -181,4 +185,157 @@ body{
     position: relative;
      
     width: 100%;
+}
+ 
+/* PLAYERS */
+ 
+#player{
+    position: relative;
+     
+    padding: 10px 0 10px 0;
+    height: 40px;
+    width: 100%;   
+}
+ 
+#player-left{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+ 
+#player-name{
+    position: relative;
+    font-size: 30px;
+}
+ 
+#club{
+    font-size: 15px;
+}
+ 
+#player-right{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+ 
+#player-right ul{
+    position: relative;
+}
+ 
+#player-right li{
+    position: relative;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    list-style: none;
+}
+ 
+.stat-container{
+    position: relative;
+     
+    width: 80px;
+    height: 90px;
+     
+    background-color: white;
+    border-radius: 6px;
+}
+ 
+.stat{
+    position: relative;
+    display: block;
+     
+    text-align: center;
+}
+ 
+.stat span{
+    font-size: 40px;
+    color: #00ae82;
+}
+ 
+.stat-title span{
+    position: relative;
+    top: 2px;
+    color: white;
+    font-size: 20px;
+}
+ 
+.stat-title{
+    position: absolute;
+    bottom: 0;
+     
+    width: 100%;
+    height: 30px;
+     
+    background-color: #00ae82;
+     
+    text-align: center;
+}
+ 
+/* PLAYER ARTILCES */
+ 
+#player-articles{
+    position: relative;
+     
+    float: left;
+     
+    top: 30px;
+}
+ 
+#player-articles h2{
+    position: relative;
+     
+    bottom: 10px;
+}
+ 
+.player-article{
+    position: relative;
+     
+    width: 700px;
+}
+ 
+.player-article-top{
+    position: relative;
+     
+    height: 20px;
+    padding: 10px 0 10px 0;
+     
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #00ae82;
+    color: white;
+}
+ 
+.player-article-top span{
+    position: relative;
+    left: 20px;
+}
+ 
+.player-article-news{
+    position: relative;
+     
+    width: 700px;
+    height: 150px;
+}
+ 
+.player-article-news p{
+    position: relative;
+    left: 20px;
+    top: 10px;
+     
+    display: block;
+    width: 600px;
+}
+ 
+/* ADS */
+ 
+#ads{
+    position: relative;
+    top: 60px;
+     
+    float: right;
+     
+    width: 150px;
+    height: 300px;
+     
+    background-color: #00ae82;
+    color: white;
 }

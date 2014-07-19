@@ -7,6 +7,8 @@ class CreatePlayers < ActiveRecord::Migration
     	t.integer "club_id"
     	t.integer "player_goals"
     	t.integer "player_assists"
+      t.integer "player_passes"
+      t.string "player_position"
       t.timestamps
     end
     add_index("players", "club_id")
