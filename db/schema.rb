@@ -39,10 +39,9 @@ ActiveRecord::Schema.define(version: 20140718140612) do
     t.integer  "player_assists"
     t.integer  "player_passes"
     t.string   "player_position"
+    t.string   "player_image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "players", ["club_id"], name: "index_players_on_club_id"
 
 end

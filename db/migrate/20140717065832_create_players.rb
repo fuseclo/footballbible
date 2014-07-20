@@ -9,9 +9,9 @@ class CreatePlayers < ActiveRecord::Migration
     	t.integer "player_assists"
       t.integer "player_passes"
       t.string "player_position"
+      t.string "player_image"
       t.timestamps
     end
-    add_index("players", "club_id")
   end
 
   def down

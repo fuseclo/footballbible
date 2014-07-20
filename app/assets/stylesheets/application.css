@@ -206,6 +206,7 @@ body{
 #player-name{
     position: relative;
     font-size: 30px;
+    left: -5px;
 }
  
 #club{
@@ -247,7 +248,7 @@ body{
 }
  
 .stat span{
-    font-size: 40px;
+    font-size: 50px;
     color: #00ae82;
 }
  
@@ -325,6 +326,94 @@ body{
     width: 600px;
 }
  
+/* CLUB PROFILE */
+ 
+#club{
+    position: relative;
+     
+    padding: 10px 0 10px 0;
+    height: 40px;
+    width: 100%;   
+}
+ 
+#club-left{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+ 
+#club-right{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+ 
+#club-right ul{
+    position: relative;
+}
+ 
+#club-right li{
+    position: relative;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    list-style: none;
+}
+ 
+/* CLUB ARTILCES */
+ 
+#club-articles{
+    position: relative;
+     
+    float: left;
+     
+    top: 30px;
+}
+ 
+#club-articles h2{
+    position: relative;
+     
+    bottom: 10px;
+}
+ 
+.club-article{
+    position: relative;
+     
+    width: 700px;
+}
+ 
+.club-article-top{
+    position: relative;
+     
+    height: 20px;
+    padding: 10px 0 10px 0;
+     
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #00ae82;
+    color: white;
+}
+ 
+.club-article-top span{
+    position: relative;
+    left: 20px;
+}
+ 
+.club-article-news{
+    position: relative;
+     
+    width: 700px;
+    height: 150px;
+}
+ 
+.club-article-news p{
+    position: relative;
+    left: 20px;
+    top: 10px;
+     
+    display: block;
+    width: 600px;
+}
+ 
 /* ADS */
  
 #ads{
@@ -338,4 +427,74 @@ body{
      
     background-color: #00ae82;
     color: white;
+}
+
+.small-container{
+    position: relative;
+     
+    float: left;
+    display: inline-block;
+     
+    padding: 10px 5px 10px 5px;
+}
+ 
+.player-graphic-container {
+    position: relative;
+    display: inline-block;
+    float: left;
+     
+    border: 5px solid #00ae82;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    width: 110px;
+    height: 110px;
+     
+}
+ 
+.player-graphic-container img{
+    position: relative;
+     
+    width: 100%;
+}
+ 
+.player-details{
+    position: relative;
+    float: left;
+    display: inline-block;
+    text-align: center;
+     
+    width: 160px;
+    min-height: 50px;
+     
+    padding: 5px 5px 5px 5px;
+     
+    background-color: #00ae82;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#goalkeepers{
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px 0 20px 0;
+}
+
+#defenders{
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px 0 20px 0;
+}
+
+#midfielders{
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 20px 0 20px 0;
 }

@@ -1,4 +1,65 @@
-<% @players.each do |player| %>
-	<%= player.player_name %><%= link_to "Player profile", {:action => 'show', :id => player.id} %>
-	<%= player.club.club_name %><br>
-<% end %>
+    <div id="goalkeepers">
+	<h2>goalkeepers:</h2>
+	<% @players_goalkeeper.each do|player| %>
+	<div class="small-container">
+        <div class="player-graphic-container">
+            <div class="player-graphic">
+            	<%= image_tag(player.player_image) %>
+            </div>
+        </div>
+        
+        <div class="player-details">
+            <span>player details:</span><br>
+            <span><%= player.player_name %></span><br>
+            <span><%= player.club.club_name %></span><br>
+            <span><%= link_to("view news and info", {:action => 'show', :id => player.id}) %></span>
+        </div>
+    </div>
+    <% end %>
+</div>
+
+<div id="defenders">
+    <h2>defenders:</h2>
+    <% @players_defender.each do|player| %>
+    <div class="small-container">
+        <div class="player-graphic-container">
+            <div class="player-graphic">
+                <%= image_tag(player.player_image) %>
+            </div>
+        </div>
+        
+        <div class="player-details">
+            <span>player details:</span><br>
+            <span><%= player.player_name %></span><br>
+            <span><%= player.club.club_name %></span><br>
+            <span><%= link_to("view news and info", {:action => 'show', :id => player.id}) %></span>
+        </div>
+    </div>
+    <% end %>
+</div>
+
+<div id="midfielders">
+    <h2>midfielders:</h2>
+    <% @players_midfielder.each do|player| %>
+    <div class="small-container">
+        <div class="player-graphic-container">
+            <div class="player-graphic">
+                <%= image_tag(player.player_image) %>
+            </div>
+        </div>
+        
+        <div class="player-details">
+            <span>player details:</span><br>
+            <span><%= player.player_name %></span><br>
+            <span><%= player.club.club_name %></span><br>
+            <span><%= link_to("view news and info", {:action => 'show', :id => player.id}) %></span>
+        </div>
+    </div>
+    <% end %>
+</div>
+
+
+
+production:
+  <<: *default
+  database: db/production.sqlite3

@@ -12,9 +12,9 @@
                 <div id="header-logo">logo</div>
                 <div id="header-nav">
                     <nav>
-                        <a href="#"><%= link_to 'Home', "/" %></a>|
-                        <a href="#">LINK</a>|
-                        <a href="#">LINK</a>
+                        <a href="#"><%= link_to 'Home', '/' %></a>
+                        <a href="#"><%= link_to 'players', {:controller => 'players', :action => 'index'} %></a>
+                        <a href="#"><%= link_to 'club', {:controller => 'clubs', :action => 'index'} %></a> 
                     </nav>
                 </div>
             </div>

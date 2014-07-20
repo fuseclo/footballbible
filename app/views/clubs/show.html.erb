@@ -1,37 +1,38 @@
-        <div id="main">
-            <div id="player">
-                <div id="player-left">
-                    <span id="player-name"><%= @player.player_name %></span><br>
-                    <span>Club: <span id="club"><%= @player.club.club_name %></span><br>
+<div id="main">
+            <div id="club">
+                <div id="club-left">
+                    <span id="player-name"><%= @club.club_name %></span><br>
+                    <span>Manager: <span id="club"><%= @club.club_name %></span><br>
+                    <span>Founded: <span id="club"></span>
                 </div>
                 
                 
-                <div id="player-right">
+                <div id="club-right">
                     <ul>
                         <li>
                             <div class="stat-container">
-                                <div class="stat"><span><%= @player.player_goals %></span></div>
+                                <div class="stat"><span>8</span></div>
                                 <div class="stat-title"><span>goals</span></div>
                             </div>
                         </li>
                         
                         <li>
                             <div class="stat-container">
-                                <div class="stat"><span><%= @player.player_assists %></span></div>
+                                <div class="stat"><span>8</span></div>
                                 <div class="stat-title"><span>assists</span></div>
                             </div>
                         </li>
                         
                         <li>
                             <div class="stat-container">
-                                <div class="stat"><span>32</span></div>
+                                <div class="stat"><span>8</span></div>
                                 <div class="stat-title"><span>passes</span></div>
                             </div>
                         </li>
                         
                         <li>
                             <div class="stat-container">
-                                <div class="stat"><span id="position">CM</span></div>
+                                <div class="stat"><span>CF</span></div>
                                 <div class="stat-title"><span>position</span></div>
                             </div>
                         </li>
@@ -39,30 +40,24 @@
                 </div>
             </div>
             <div class="clear"></div>
-        </div>
-
-        <div class="clear"></div>
-            <div id="player-articles">
+            <div id="club-articles">
                 <h2>Articles:</h2>
-                <% @player.articles.each do |article| %>
-                <div class="player-article">
-                    <div class="player-article-top">
+            	<% @club.articles.each do |article| %>
+                <div class="club-article">
+                    <div class="club-article-top">
                         <span><%= article.article_title %></span>
                     </div>
                     
-                    <div class="player-article-news">
+                    <div class="club-article-news">
                         <p>
-                            <%= article.article_small %>
-                            <%= link_to("Read more...", {:controller => 'articles', :action => 'show', :id => article.id}) %>
+                         	<%= article.article_small %>
                         </p>
                     </div>
                 </div>
                 <% end %>
             </div>
-
                 
-            <div id="ads">
-               git commit -am "comment"
-               git push origin master
-            </div>
+                <div id="ads">
+                    ads go here.
+                </div>
         </div>
