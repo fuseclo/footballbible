@@ -22,6 +22,8 @@ test:
 
 production:
   adapter: postgresql
-  database: d2iqafoe087glq
+  encoding: unicode
+  database: footballbible_production
   pool: 5
-  timeout: 5432
+  username: footballbible
+  password:
