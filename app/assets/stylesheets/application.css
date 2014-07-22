@@ -14,6 +14,17 @@ body{
 .clear{
     clear: both;
 }
+
+.form{
+    position: relative;
+
+    padding: 10px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+    border: none;
+    border-bottom: 5px solid #00ae82;
+}
  
 /* HEADER */
  

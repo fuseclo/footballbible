@@ -1,12 +1,12 @@
 <%= form_for(:player, :url => {:action => 'create'}) do |f| %>
-	Player Name:<%= f.text_field :player_name %>	
-	Club ID:<%= f.text_field :club_id %>
-	Player Nation: <%= f.text_field :player_nation %>
-	Player Number: <%= f.text_field :player_number %>
-	Player Goals: <%= f.text_field :player_goals %>
-	Player Assists: <%= f.text_field :player_assists %>
-	Player passes: <%= f.text_field :player_passes %>	
-	Player image: <%= f.text_field :player_image %>
-	Player position: <%= f.text_field :player_position %>
-	<%= submit_tag("Create Player") %>
+	 <%= f.text_field :player_name, :class => 'form', :placeholder => 'Enter Player name..' %><br>
+	<%= f.text_field :club_id, :class => 'form', :placeholder => 'Enter club ID..' %><br>
+	<%= f.text_field :player_nation, :class => 'form', :placeholder => 'Enter players nation..' %><br>
+	<%= f.text_field :player_number, :class => 'form', :placeholder => 'Enter players kit number..' %><br>
+	<%= f.text_field :player_goals, :class => 'form', :placeholder => 'Enter player goals..' %><br>
+	<%= f.text_field :player_assists, :class => 'form', :placeholder => 'Enter player assists' %><br>
+	<%= f.text_field :player_passes, :class => 'form', :placeholder => 'Enter player passes' %><br>
+	<%= f.text_field :player_image, :class => 'form', :placeholder => 'Enter player image url..' %><br>
+	<%= f.text_field :player_position, :class => 'form', :placeholder => 'Enter player position e.g. striker' %><br>
+	<%= submit_tag("Create Player", :class => 'form') %>
 <% end %>

@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 20140718140612) do
 
   create_table "clubs", force: true do |t|
     t.string   "club_name"
+    t.string   "club_goals"
+    t.string   "club_assists"
+    t.string   "club_position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

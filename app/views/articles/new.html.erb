@@ -1,10 +1,10 @@
 <%= form_for(:article, :url => {:action => 'create'}) do |f| %>
-	Article title:<%= f.text_field("article_title") %>
-	Article small:<%= f.text_field("article_small") %>
-	Article big:<%= f.text_field("article_big") %>
-	Article image:<%= f.text_field("article_image") %>
-	Players ID:<%= f.text_field("player_id") %>
-	Clubs ID:<%= f.text_field("club_id") %>
+	<%= f.text_field("article_title", :class => 'form', :placeholder => 'Enter article title..') %><br>
+	<%= f.text_field("article_small", :class => 'form', :placeholder => 'Enter small article here..') %><br>
+	<%= f.text_field("article_big", :class => 'form', :placeholder => 'Enter big article here..') %><br>
+	<%= f.text_field("article_image", :class => 'form', :placeholder => 'Enter article image here.') %><br>
+	<%= f.text_field("player_id", :class => 'form', :placeholder => 'Enter Player ID here..') %><br>
+	<%= f.text_field("club_id", :class => 'form', :placeholder => 'Enter club ID here..') %><br>
 
-	<%= submit_tag("Create Article") %>
+	<%= submit_tag("Create Article", :class => 'form') %>
 <% end %>

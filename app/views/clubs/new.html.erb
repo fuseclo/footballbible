@@ -1,4 +1,7 @@
 <%= form_for(:club, :url => {:action => 'create'}) do |f| %>
-	Club Name:<%= f.text_field :club_name %>
-	<%= submit_tag("Create Club") %>
+	<%= f.text_field :club_name, :class => 'form', :placeholder => 'Enter club name..' %><br>
+	<%= f.text_field :club_goals, :class => 'form', :placeholder => 'Enter total club goals..' %><br>
+	<%= f.text_field :club_assists, :class => 'form', :placeholder => 'Enter total club assists..' %><br>
+	<%= f.text_field :club_position, :class => 'form', :placeholder => 'Enter clubs position in table..' %><br>
+	<%= submit_tag("Create Club", :class => 'form') %>
 <% end %>
