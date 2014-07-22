@@ -45820,3 +45820,263 @@ ActionController::RoutingError (No route matches [GET] "/assets/pardew.jpg"):
   Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
   Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
   Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.8ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2014-07-21 04:01:15 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."player_position" = 'goalkeeper'
+  [1m[36mClub Load (0.3ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mClub Load (0.2ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players"  WHERE "players"."player_position" = 'defender'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players"  WHERE "players"."player_position" = 'midfielder'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered players/index.html.erb within layouts/application (238.5ms)
+Completed 200 OK in 521ms (Views: 478.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/joehart.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/amos.jpeg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/bradjones.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/ddg.jpeg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/simonmignolet.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/kompany.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/philjones.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/tomthorpe.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/thomasvermaelen.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/michaelcarrick.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/images/manutd/anderherrera.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/manutd/anderherrera.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (51.2ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.7ms)
+
+
+Started GET "/assets/manutd/stevengerrard.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/assets/manutd/EmreCan.jpg" for 127.0.0.1 at 2014-07-21 04:01:16 +0100
+
+
+Started GET "/players/new" for 127.0.0.1 at 2014-07-22 04:29:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlayersController#new as HTML
+  Rendered players/new.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 366ms (Views: 326.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 04:29:10 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (79.3ms)
+Completed 200 OK in 258ms (Views: 201.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/pardew.jpg" for 127.0.0.1 at 2014-07-22 04:29:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/pardew.jpg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nathan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/clubs.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/players.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-22 04:29:24 +0100
+
+
+Started POST "/articles/create" for 127.0.0.1 at 2014-07-22 04:30:07 +0100
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QPVnwVNRouZgDjJtdhBJuugmxsai50Z/i7N2IaEAoX0=", "article"=>{"article_title"=>"Reus signs!", "article_small"=>"Article testArticle testArticle testArticle testArticle testArticle testArticle test", "article_big"=>"articlesmall.articlesmall.articlesmall.articlesmall.", "article_image"=>"", "player_id"=>"", "club_id"=>"1"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "articles" ("article_big", "article_image", "article_small", "article_title", "club_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["article_big", "articlesmall.articlesmall.articlesmall.articlesmall."], ["article_image", ""], ["article_small", "Article testArticle testArticle testArticle testArticle testArticle testArticle test"], ["article_title", "Reus signs!"], ["club_id", 1], ["created_at", "2014-07-22 03:30:07.051257"], ["updated_at", "2014-07-22 03:30:07.051257"]]
+  [1m[36m (255.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 261ms (ActiveRecord: 256.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-22 04:30:07 +0100
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mPlayer Load (0.1ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mClub Load (0.1ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "players".* FROM "players"  WHERE "players"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "clubs".* FROM "clubs"  WHERE "clubs"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/index.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `player_name' for nil:NilClass):
+     6: 				<h2><%= article.article_title %></h2> 
+     7: 
+     8: 				<p><%= article.article_small %><%= link_to "Read more!", {:action => 'show', :id => article.id} %></p>
+     9: 				<p>Category:<%= article.player.player_name %>
+    10: 					<%= article.club.club_name %>
+    11: 				</p>
+    12: 			</div>
+  app/views/articles/index.html.erb:9:in `block in _app_views_articles_index_html_erb__2151510732024002064_69909826451660'
+  app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2151510732024002064_69909826451660'
+
+
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.9ms)
