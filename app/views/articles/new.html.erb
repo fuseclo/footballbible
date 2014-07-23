@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+Logged in as: <%= current_user.email %><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <%= form_for(:article, :url => {:action => 'create'}) do |f| %>
 	<%= f.text_field("article_title", :class => 'form', :placeholder => 'Enter article title..') %><br>
 	<%= f.text_field("article_small", :class => 'form', :placeholder => 'Enter small article here..') %><br>
@@ -7,4 +9,10 @@
 	<%= f.text_field("club_id", :class => 'form', :placeholder => 'Enter club ID here..') %><br>
 
 	<%= submit_tag("Create Article", :class => 'form') %>
+<% end %>
+
+<% else %>
+
+you need to be logged in to access this page, thank you.
+
 <% end %>
