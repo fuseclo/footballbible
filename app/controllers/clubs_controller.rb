@@ -8,7 +8,8 @@ class ClubsController < ApplicationController
   end
 
   def new
-  	@club = Club.new
+  	#@club = Club.new
+    redirect_to(:controller => 'clubs', :action => 'index')
   end
 
   def create
@@ -31,6 +32,6 @@ class ClubsController < ApplicationController
 
   
   	def club_params
-  		params.require(:club).permit(:club_name, :player_id)
+  		params.require(:club).permit(:club_name, :player_id, :club_goals, :club_assists, :club_position, :club_manager, :club_founded, :club_manager, :club_founded)
   	end
 end

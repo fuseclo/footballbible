@@ -5,7 +5,9 @@ class CreateClubs < ActiveRecord::Migration
     	t.string "club_goals"
     	t.string "club_assists"
     	t.string "club_position"
-    		
+      t.string "club_manager"
+      t.string "club_founded"
+      t.string "club_image"    		
       t.timestamps
     end
   end

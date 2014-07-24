@@ -13,7 +13,8 @@ class PlayersController < ApplicationController
   end
 
   def new
-  	@player = Player.new
+  	#@player = Player.new
+    redirect_to :action => 'index'
   end
 
   def create

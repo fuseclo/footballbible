@@ -7,4 +7,8 @@ class Player < ActiveRecord::Base
 	scope :midfielders, lambda { where(:player_position => 'midfielder') }
 	scope :attacking_midfielders, lambda{where(:player_position => 'attacking_midfielder')}
 	scope :strikers, lambda{where(:player_position => 'striker')}
+
+	def to_s
+		player_name
+	end
 end

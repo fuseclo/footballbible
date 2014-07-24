@@ -1,13 +1,8 @@
-<% if user_signed_in? %>
-Logged in as: <%= current_user.email %><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+
 <%= form_for(:club, :url => {:action => 'create'}) do |f| %>
 	<%= f.text_field :club_name, :class => 'form', :placeholder => 'Enter club name..' %><br>
 	<%= f.text_field :club_goals, :class => 'form', :placeholder => 'Enter total club goals..' %><br>
 	<%= f.text_field :club_assists, :class => 'form', :placeholder => 'Enter total club assists..' %><br>
 	<%= f.text_field :club_position, :class => 'form', :placeholder => 'Enter clubs position in table..' %><br>
 	<%= submit_tag("Create Club", :class => 'form') %>
-<% end %>
-
-<% else %>
-	Need to be loggeg in to access this page, thank you. 
 <% end %>

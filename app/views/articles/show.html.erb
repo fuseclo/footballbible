@@ -1,3 +1,12 @@
-<%= @article.article_title %>
-<%= @article.player.player_name %>
-<%= @article.club.club_name %>
+<div id="main">
+	<div id="article-title">
+		<div id="title-inner">
+			<h2 style="color:white;"><%= @article.article_title %></h2>
+		</div>
+	</div>
+            
+	<div id="article">
+		<p><%= @article.article_big %></p>
+               
+	</div>        
+</div>

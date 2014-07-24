@@ -13,11 +13,16 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 	<% @articles.each do |article| %>
 	<li>
 		<div class="news-container">
-			<div class="news-title">
-				<h2><%= article.article_title %></h2> 
 
-				<p><%= article.article_small %><%= link_to "Read more!", {:action => 'show', :id => article.id} %></p>
-				<p>Category:<%= article.player.player_name %>
+			<div class="article-image">
+				<%= image_tag(article.article_image) %>
+			</div>
+
+			<div class="news-title">
+				<h2><%= article.article_title %></h2>
+
+				<p><%= article.article_small %><br><%= link_to "Read more!", {:action => 'show', :id => article.id} %></p><br>
+				<p>Category:<%= article.player.player_name %>,
 					<%= article.club.club_name %>
 				</p>
 			</div>

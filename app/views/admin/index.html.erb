@@ -1,0 +1,16 @@
+Players:<br><br>
+<% @players.each do|player| %>
+	<%= player.player_name %><%= link_to "Edit", :controller => 'players', :action => 'edit', :id => player.id %><br><br>
+<% end %>
+
+
+Clubs:<br><br>
+<% @clubs.each do |club| %>		
+	<%= club.club_name %>							<%= link_to "Edit club.", :controller => 'clubs', :action => 'edit', :id => club.id %><br><br>
+<% end %>
+
+<br>
+Users:<br><br>
+<% @users.each do |user| %>
+	<%= user.email %>
+<% end %>

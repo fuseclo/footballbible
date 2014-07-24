@@ -8,7 +8,8 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new
+    #@article = Article.new
+    redirect_to :action => 'index'
   end
 
   def create
