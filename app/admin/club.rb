@@ -7,7 +7,7 @@ ActiveAdmin.register Club do
       column "club_position"
       column "club_manager"
       column "club_founded"
-        actions
+      actions
         
   end
   permit_params :id, :club_name, :club_goals, :club_assists, :club_position, :club_manager, :club_founded
