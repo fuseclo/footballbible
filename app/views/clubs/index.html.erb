@@ -19,7 +19,8 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 			<div class="news-title">
 				<h2><%= club.club_name %></h2>
 
-				<p><%= club.club_name %></p>
+				<strong>Manager:</strong> <span><%= club.club_manager %></span>
+				<strong>League Position:</strong> <span><%= club.club_position %></span>
 				<p><%= link_to("View profile", {:action => 'show', :id => club.id}) %></p>
 			</div>
 		</div>
