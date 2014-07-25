@@ -82513,3 +82513,187 @@ Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-0
 
 
 Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-25 01:22:46 +0100
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-07-25 03:15:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/bundler/gems/active_admin-273609968371/app/views/active_admin/page/index.html.arb (488.9ms)
+Completed 200 OK in 663ms (Views: 540.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:41 +0100
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:42 +0100
+
+
+Started GET "/admin/clubs" for 127.0.0.1 at 2014-07-25 03:15:45 +0100
+Processing by Admin::ClubsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users"  WHERE "admin_users"."id" = 1  ORDER BY "admin_users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "clubs"  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "clubs"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "clubs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "clubs"  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mClub Load (0.3ms)[0m  SELECT  "clubs".* FROM "clubs"   ORDER BY "clubs"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players"[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered /home/nathan/.rvm/gems/ruby-2.1.2/bundler/gems/active_admin-273609968371/app/views/active_admin/resource/index.html.arb (265.1ms)
+Completed 200 OK in 313ms (Views: 279.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/datepicker.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/widget.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/core.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/position.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/mouse.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/draggable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/button.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/resizable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/sortable.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery-ui/dialog.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-07-25 03:15:46 +0100
