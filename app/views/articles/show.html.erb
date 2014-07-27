@@ -6,7 +6,6 @@
 	</div>
             
 	<div id="article">
-		<p><%= @article.article_big %></p>
-               
+		<%= simple_format(@article.article_big, :class => 'as') %>               
 	</div>        
 </div>
