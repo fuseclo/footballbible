@@ -2,14 +2,22 @@
 		description: "An indepth look at the current football related article that you have chosen to read",
 		keywords: %w(articles football manchester united liverpool chelsea arsenal footy news city prembible)
 %>
+
+
 <div id="main">
-	<div id="article-title">
-		<div id="title-inner">
-			<h2 style="color:white;"><%= @article.article_title %></h2>
-		</div>
-	</div>
-            
-	<div id="article">
-		<%= simple_format(@article.article_big, :class => 'as') %>               
-	</div>        
-</div>
+            <div id="container">
+                <div id="article-header-title">
+                    <h3><%= @article.article_title %></h3>
+                </div>
+                <div id="article-back">
+                	<h3><%= link_to 'Back', :action => 'index' %></h3>
+                </div>
+                
+                <div id="article-content">
+                	<%= simple_format(@article.article_big, :class => 'ass') %>
+                </div>
+                
+                <div id="article-ads">
+                </div>
+            </div>
+        </div>

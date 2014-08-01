@@ -2,24 +2,18 @@
 		description: "A list of all recent articles from teams around the premier leauge, including manchester united and liverpool",
 		keywords: %w(articles football manchester united liverpool chelsea arsenal footy news city prembible)
 %>
-<ul>
-	<% @articles.each do |article| %>
-	<li>
-		<div class="news-container">
 
-			<div class="article-image">
-				<%= image_tag(article.article_image) %>
-			</div>
 
-			<div class="news-title">
-				<h2><%= article.article_title %></h2>
-
-				<p><%= article.article_small %><br><%= link_to "Read more!", {:action => 'show', :id => article.id} %></p><br>
-				<p>Category:
-					<%= article.club.club_name %>
-				</p>
-			</div>
-		</div>
-	</li>
-	<% end %>
-</ul>
+                <div id="articles">
+                    <ul>
+                    	<% @articles.each do |article| %>
+                        <li>
+                            <div class="article-image">
+                            	<%= image_tag(article.article_image) %>
+                            </div>
+                            <div class="article-title">
+                                <h2><%= link_to article.article_title, :action => 'show', :id => article.id %></h2><span>
+                            </div>
+                        </li>
+                        <% end %>
+                </div>

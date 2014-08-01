@@ -1,33 +1,66 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
  
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
      
-    background-color: #1b1a23;
-    color: #f6f6f6;
+    background-color: #1b1b24;
 }
  
-.clear{
-    clear: both;
-}
-
-.form{
+#container{
     position: relative;
-
-    padding: 10px;
-    margin-top: 20px;
-
-    border-radius: 5px;
-    border: none;
-    border-bottom: 5px solid #00ae82;
+     
+    padding: 10px 0 10px 0;
 }
-
-.as{
-    margin-bottom: 20px;
+ 
+/* TOP AND HEADER */
+ 
+#top{
+    position: relative;
+     
+    width: 100%;
+    height: 90px;
+     
+    background-color: #464368;
+    color: white;
+}
+ 
+#top-container{
+    position: relative;
+     
+    width: 960px;   
+    margin: 0 auto;
+ 
+    padding: 10px 0 10px 0;
+     
+    background-color: #464368;
+}
+ 
+#top-left{
+    position: relative;
+    display: inline-block;
+}
+ 
+#top-right{
+    position: relative;
+    display: inline-block;
+     
+    float: right;
+}
+ 
+#top-right ul{
+    position: relative;
+}
+ 
+#top-right li{
+    position: relative;
+     
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px 0 5px;
 }
  
 /* HEADER */
@@ -36,37 +69,33 @@ body{
     position: relative;
      
     width: 100%;
-    height: 60px;
+    padding: 10px 0 10px 0;
      
-    background-color: #00ae82;
+    background-color: #3c3c50;
 }
  
-#header-inner{
+#header-container{
     position: relative;
      
-    width: 900px;
-    padding: 20px 0 20px 0;
+    width: 960px;
     margin: 0 auto;
+    color: white;
 }
  
-#header-logo{
+#header ul{
     position: relative;
-    display: inline-block;
-    float: left;
 }
  
-#header-nav{
-    position: relative;
-    display: inline-block;
-    float: right;
-}
- 
-#header-nav a{
+#header li{
     position: relative;
      
-    color: white;
+    display: inline-block;
+    padding: 0 20px 0 0px;
+}
+ 
+#header li a{
     text-decoration: none;
-    padding: 0 10px 0 10px;
+    color: white;
 }
  
 /* MAIN */
@@ -74,468 +103,158 @@ body{
 #main{
     position: relative;
      
-    width: 900px;
+    width: 960px;
     margin: 0 auto;
-    padding: 10px 0 20px 0;
      
-    color: #666666;
-}
- 
-#news{
-    position: relative;
-}
- 
-#news ul{
-    position: relative;
-}
- 
-#news li{
-    position: relative;
-     
-    list-style: none;
-    display: inline-block;
-    padding: 0 30px 20px 0;
-}
-     
-.news-container{
-    position: relative;
-     
-    width: 260px;
-    height: 310px;
-    overflow: hidden;
-     
-    border: 2px solid #00ae82;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-     
-     
-}
- 
-.news-container img{
-    overflow: hidden;
-}
- 
-.news-title{
-    position: absolute;
-    bottom: 0;
-     
-    width: 260px;
-     
-    background-color: #00ae82;
     color: white;
-    padding: 10px 0 10px 0;
-     
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-     
-    z-index: 9999999999;
 }
  
-.news-title h2{
+/* ARTICLES */
+ 
+#articles{
     position: relative;
-
-    width: 100%;
+         
+    overflow: hidden;
+    float: left;
+     
+    width: 850px;
+     
+    margin: 0;
+    padding: 0;
 }
  
-.news-title p{
+#articles ul{
     position: relative;
-     
-    font-size: 14px;
-    width: 100%;
 }
-
-.news-title a{
-    position: relative;
-
-    width: 100%;
-}
-/* ARTICLE */
  
-.article-top{
+#articles li{
     position: relative;
      
-    width: 896px;
-    height: 190px;
-     
-    border: 2px solid #00ae82;
-    border-top-right-radius: 6px;
+    display: inline-block;
+    padding: 0 20px 30px 0;
+    list-style: none;
 }
  
 .article-image{
-    position: absolute;
-
-    top: 0;
+    position: relative;
      
-    height: 192px;
+    width: 390px;
+    height: 200px;
+     
+    border: 2px solid #464368;
+}
+ 
+.article-title{
+    position: relative;
+     
     width: 100%;
-    overflow: auto;
+    padding: 10px 0 10px 0;
+     
+    background-color: #464368;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
+.article-title h2{
+    position: relative;
+    display: inline-block;
+    left: 5px;
+}
+
+.article-title h2 a{
+    color: white;
+    text-decoration: none;
+}
+ 
 .article-image img{
     position: relative;
-
+     
+    width: 100%;
     height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
- 
-#article-title{
-    position: relative;
-     
-    width: 904px;
-
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-
-    background-color: #00ae82;
-}
- 
-#article-title h2{
-    position: relative;
-     
-}
- 
-#title-inner{
-    position: relative;
-     
-    padding: 10px 0 10px 0;
-}
- 
-#article{
-    position: relative;
-     
-    width: 900px;
-    overflow: hidden;
-    padding: 10px 0 10px 0;
-     
-    color: white;
-}
- 
-.article p{
-    position: relative;
-     
-    width: 100%;
-}
-
-.news-title h2{
-    position: relative;
-
-    width: 100%;
-}
- 
-.article-title p{
-    position: relative;
-
-    width: 100%;
-}
-/* PLAYERS */
- 
-#player{
-    position: relative;
-     
-    padding: 10px 0 10px 0;
-    height: 40px;
-    width: 100%;   
-}
- 
-#player-left{
-    position: relative;
-    display: inline-block;
-    float: left;
-}
- 
-#player-name{
-    position: relative;
-    font-size: 30px;
-    left: -5px;
-}
- 
-#club{
-    font-size: 15px;
-}
- 
-#player-right{
-    position: relative;
-    display: inline-block;
-    float: right;
-}
- 
-#player-right ul{
-    position: relative;
-}
- 
-#player-right li{
-    position: relative;
-    display: inline-block;
-    padding: 0 5px 0 5px;
-    list-style: none;
-}
- 
-.stat-container{
-    position: relative;
-     
-    width: 80px;
-    height: 90px;
-     
-    background-color: white;
-    border-radius: 6px;
-}
- 
-.stat{
-    position: relative;
-    display: block;
-     
-    text-align: center;
-}
- 
-.stat span{
-    font-size: 50px;
-    color: #00ae82;
-}
- 
-.stat-title span{
-    position: relative;
-    top: 2px;
-    color: white;
-    font-size: 20px;
-}
- 
-.stat-title{
-    position: absolute;
-    bottom: 0;
-     
-    width: 100%;
-    height: 30px;
-     
-    background-color: #00ae82;
-     
-    text-align: center;
-}
- 
-/* PLAYER ARTILCES */
- 
-#player-articles{
-    position: relative;
-     
-    float: left;
-     
-    top: 30px;
-}
- 
-#player-articles h2{
-    position: relative;
-     
-    bottom: 10px;
-}
- 
-.player-article{
-    position: relative;
-     
-    width: 700px;
-}
- 
-.player-article-top{
-    position: relative;
-     
-    height: 20px;
-    padding: 10px 0 10px 0;
-     
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background-color: #00ae82;
-    color: white;
-}
- 
-.player-article-top span{
-    position: relative;
-    left: 20px;
-}
- 
-.player-article-news{
-    position: relative;
-     
-    width: 700px;
-    height: 150px;
-}
- 
-.player-article-news p{
-    position: relative;
-    left: 20px;
-    top: 10px;
-     
-    display: block;
-    width: 600px;
-}
- 
-/* CLUB PROFILE */
- 
-#club{
-    position: relative;
-     
-    padding: 10px 0 10px 0;
-    height: 40px;
-    width: 100%;   
-}
- 
-#club-left{
-    position: relative;
-    display: inline-block;
-    float: left;
-}
- 
-#club-right{
-    position: relative;
-    display: inline-block;
-    float: right;
-}
- 
-#club-right ul{
-    position: relative;
-}
- 
-#club-right li{
-    position: relative;
-    display: inline-block;
-    padding: 0 5px 0 5px;
-    list-style: none;
-}
- 
-/* CLUB ARTILCES */
- 
-#club-articles{
-    position: relative;
-     
-    float: left;
-     
-    top: 30px;
-}
- 
-#club-articles h2{
-    position: relative;
-     
-    bottom: 10px;
-}
- 
-.club-article{
-    position: relative;
-     
-    width: 700px;
-}
- 
-.club-article-top{
-    position: relative;
-     
-    height: 20px;
-    padding: 10px 0 10px 0;
-     
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background-color: #00ae82;
-    color: white;
-}
- 
-.club-article-top span{
-    position: relative;
-    left: 20px;
-}
- 
-.club-article-news{
-    position: relative;
-     
-    width: 700px;
-    height: 150px;
-}
- 
-.club-article-news p{
-    position: relative;
-    left: 20px;
-    top: 10px;
-     
-    display: block;
-    width: 600px;
 }
  
 /* ADS */
  
 #ads{
     position: relative;
-    top: 60px;
-     
     float: right;
      
-    width: 150px;
-    height: 300px;
-     
-    background-color: #00ae82;
-    color: white;
-}
-
-.small-container{
-    position: relative;
-     
-    float: left;
-    display: inline-block;
-     
-    padding: 10px 5px 10px 5px;
-}
- 
-.player-graphic-container {
-    position: relative;
-    display: inline-block;
-    float: left;
-     
-    border: 5px solid #00ae82;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-
     width: 110px;
-    height: 110px;
+    height: 60px;
      
+    color: white;
+    background-color: black;
 }
- 
-.player-graphic-container img{
+
+#article-header{
     position: relative;
      
     width: 100%;
+    padding: 10px 0 10px 0;
+     
+    background-color: #464368;
+    color: white;
 }
  
-.player-details{
+#article-header-title{
+    position: relative;
+    display: inline-block;
+    float: left;
+     
+    width: 800px;
+    padding: 10px 0 10px 0;
+     
+    background-color: #464368;
+     
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+ 
+#article-header-title h3{
+    position: relative;
+     
+    left: 10px;
+}
+ 
+#article-back{
+    position: relative;
+    display: inline-block;
+    float: right;
+     
+    width: 150px;
+    padding: 10px 0 10px 0;
+     
+    background-color: #3c3c50;
+    color: white;
+     
+    border-radius: 6px;
+}
+ 
+#article-back h3{
+    position: relative;
+    text-align: center;
+}
+
+#article-back h3 a{
+    color: white;
+    text-decoration: none;
+}
+ 
+#article-content{
     position: relative;
     float: left;
-    display: inline-block;
-    text-align: center;
      
-    width: 160px;
-    min-height: 50px;
+    top: 10px;
+    padding: 0px 0 10px 10px;
+    width: 790px;  
+}
+ 
+#article-ads{
+    position: relative;
+    float: right;
+    top: 10px;
      
-    padding: 5px 5px 5px 5px;
+    background-color: red;
      
-    background-color: #00ae82;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-#goalkeepers{
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 20px 0 20px 0;
-}
-
-#defenders{
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 20px 0 20px 0;
-}
-
-#midfielders{
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 20px 0 20px 0;
+    width: 150px;
 }
