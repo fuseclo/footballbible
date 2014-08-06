@@ -17,6 +17,8 @@ gem 'devise'
 
 gem 'taps', '~> 0.3.24'
 
+gem 'friendly_id', '~> 5.0.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+
 #SEO STUFFFFFFS
 
 gem 'metamagic'
